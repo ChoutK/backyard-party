@@ -19,7 +19,7 @@ function typeNextChar() {
       index++;
     }
 
-    setTimeout(typeNextChar, 25);
+    setTimeout(typeNextChar, 85);
   } else {
     setTimeout(() => {
       intro.style.transition = "opacity 1s ease";
@@ -28,7 +28,7 @@ function typeNextChar() {
         intro.style.display = "none";
         main.style.display = "block";
       }, 1000);
-    }, 500);
+    }, 1100);
   }
 }
   typeNextChar();
