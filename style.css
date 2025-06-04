@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P");
+body {
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 2rem;
+  background-color: #000;
+  text-align: center;
+}
+
+#intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #0f0;
+  font-family: "Press Start 2P", cursive;  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: #0f0;
+  margin-left: 5px;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-family: 'Brush Script MT', cursive;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.box {
+  margin: 1rem auto;
+  padding: 1.2rem;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.2); /* dark transparent background */
+  color: #fff;
+  /* border: 2px solid #c600ff; neon base color (cyan) */
+  border: 2px solid;
+  box-shadow:
+    0 0 5px #c600ff,
+    0 0 10px #c600ff,
+    /* 0 0 20px #c600ff, */
+    0 0 40px #c600ff;
+}
+
+.purple {
+  border-color: #c600ff;
+  animation: pulsePurple 1.2s infinite alternate;
+}
+
+.green {
+  border-color: #39ff14;
+  animation: pulseGreen 1.2s infinite alternate;
+}
+
+.yellow {
+  border-color: #ffea00;
+  animation: pulseYellow 1.2s infinite alternate;
+}
+
+.blue {
+  border-color: #00f7ff;
+  animation: pulseBlue 1.2s infinite alternate;
+}
+
+.orange {
+  border-color: #ff6700;
+  animation: pulseOrange 1.2s infinite alternate;
+}
+
+/* .pink {
+  border-color: #ff00ff;
+  animation: pulsePink 1.2s infinite alternate;
+} */
+a {
+  color: #c600ff;
+  font-weight: bold;
+}
+
+/* Pulse animations */
+@keyframes pulsePurple {
+  0%   { box-shadow: 0 0 5px #c600ff; }
+  100% { box-shadow: 0 0 20px #c600ff, 0 0 40px #c600ff; }
+}
+
+@keyframes pulseGreen {
+  0%   { box-shadow: 0 0 5px #39ff14; }
+  100% { box-shadow: 0 0 20px #39ff14, 0 0 40px #39ff14; }
+}
+
+@keyframes pulseYellow {
+  0%   { box-shadow: 0 0 5px #ffea00; }
+  100% { box-shadow: 0 0 20px #ffea00, 0 0 40px #ffea00; }
+}
+
+@keyframes pulseBlue {
+  0%   { box-shadow: 0 0 5px #00f7ff; }
+  100% { box-shadow: 0 0 20px #00f7ff, 0 0 40px #00f7ff; }
+}
+
+@keyframes pulseOrange {
+  0%   { box-shadow: 0 0 5px #ff6700; }
+  100% { box-shadow: 0 0 20px #ff6700, 0 0 40px #ff6700; }
+}
+
+/* @keyframes pulsePink {
+  0%   { box-shadow: 0 0 5px #ff00ff; }
+  100% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
+} */
+
+
+
+
+
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+iframe {
+  border: none;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+
+/* .cocktail-icon {
+  width: 60px;
+  display: block;
+  margin: 0 auto 0.5rem auto;
+} */
+
+
+@keyframes fadeInDrop {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating logo background */
+
+/* General style */
+.logo-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.float-logo {
+  position: absolute;
+  opacity: 0.40;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Movement directions */
+@keyframes float-left {
+  0% { transform: translateX(0) rotate(0deg); }
+  100% { transform: translateX(-120vw) rotate(-360deg); }
+}
+
+@keyframes float-right {
+  0% { transform: translateX(0) rotate(0deg); }
+  100% { transform: translateX(120vw) rotate(360deg); }
+}
+
+@keyframes float-up {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(-120vh) rotate(360deg); }
+}
+
+@keyframes float-down {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(120vh) rotate(-360deg); }
+}
+
+@keyframes float-diag {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(120vw, -120vh) rotate(360deg); }
+}
+
+/* Assign animations */
+.float-left  { animation-name: float-left; }
+.float-right { animation-name: float-right; }
+.float-up    { animation-name: float-up; }
+.float-down  { animation-name: float-down; }
+.float-diag  { animation-name: float-diag; }
+
+
+.party-logo {
+  max-width: 280px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 0.1rem auto;
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInDrop 1.2s ease-out forwards;
+}
+
+.footer-logo {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.footer-logo img {
+  width: 180px;
+  max-width: 80%;
+  opacity: 0.85;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(2.50);
+  opacity: 1;
+}
