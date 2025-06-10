@@ -96,10 +96,6 @@ h1 {
   animation: pulseOrange 1.2s infinite alternate;
 }
 
-/* .pink {
-  border-color: #ff00ff;
-  animation: pulsePink 1.2s infinite alternate;
-} */
 a {
   color: #c600ff;
   font-weight: bold;
@@ -131,13 +127,6 @@ a {
   100% { box-shadow: 0 0 20px #ff6700, 0 0 40px #ff6700; }
 }
 
-/* @keyframes pulsePink {
-  0%   { box-shadow: 0 0 5px #ff00ff; }
-  100% { box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff00ff; }
-} */
-
-
-
 .button {
   display: inline-block;
   padding: 0.6rem 1.2rem;
@@ -163,13 +152,6 @@ iframe {
   border-radius: 10px;
   margin-top: 0.5rem;
 }
-
-/* .cocktail-icon {
-  width: 60px;
-  display: block;
-  margin: 0 auto 0.5rem auto;
-} */
-
 
 @keyframes fadeInDrop {
   to {
