@@ -39,14 +39,14 @@ function typeNextChar() {
 const countdown = document.getElementById("countdown");
 
 // Set party date here
-const partyDate = new Date("2025-06-20T19:00:00");
+const partyDate = new Date("2025-06-27T20:00:00");
 
 function updateCountdown() {
   const now = new Date();
   const diff = partyDate - now;
 
   if (diff <= 0) {
-    countdown.textContent = "It's party time!";
+    countdown.textContent = "Doors are open";
     return;
   }
 
