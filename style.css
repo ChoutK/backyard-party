@@ -45,6 +45,11 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+a {
+  color: #c600ff;
+  font-weight: bold;
+}
+
 .tagline {
   font-family: 'Brush Script MT', cursive;
   font-size: 2rem;
@@ -69,6 +74,36 @@ h1 {
     0 0 10px #c600ff,
     /* 0 0 20px #c600ff, */
     0 0 40px #c600ff;
+}
+
+.party-logo {
+  max-width: 280px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto 0.1rem auto;
+  display: block;
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeInDrop 1.2s ease-out forwards;
+}
+
+.footer-logo {
+  margin-top: 1rem;
+  padding: 2rem 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+.footer-logo img {
+  width: 180px;
+  max-width: 80%;
+  opacity: 0.85;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(2.50);
+  opacity: 1;
 }
 
 .purple {
@@ -96,10 +131,6 @@ h1 {
   animation: pulseOrange 1.2s infinite alternate;
 }
 
-a {
-  color: #c600ff;
-  font-weight: bold;
-}
 
 /* Pulse animations */
 @keyframes pulsePurple {
@@ -213,33 +244,3 @@ iframe {
 .float-down  { animation-name: float-down; }
 .float-diag  { animation-name: float-diag; }
 
-
-.party-logo {
-  max-width: 280px;
-  width: 90%;
-  height: auto;
-  margin: 0 auto 0.1rem auto;
-  display: block;
-  opacity: 0;
-  transform: translateY(-10px);
-  animation: fadeInDrop 1.2s ease-out forwards;
-}
-
-.footer-logo {
-  margin-top: 1rem;
-  padding: 2rem 0;
-  text-align: center;
-  background-color: transparent;
-}
-
-.footer-logo img {
-  width: 180px;
-  max-width: 80%;
-  opacity: 0.85;
-  transition: transform 0.3s ease;
-}
-
-.footer-logo img:hover {
-  transform: scale(2.50);
-  opacity: 1;
-}
