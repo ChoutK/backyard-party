@@ -1,6 +1,6 @@
 // Typewriter effect intro
 document.addEventListener("DOMContentLoaded", () => {
-  const message = "Access Denied... <br><br> Joking :P <br><br> you are invited to -->";
+  const message = "Access Denied... <br><br> Joking <br><br> you are invited to -->";
   const typedText = document.querySelector(".typed-text");
   const main = document.getElementById("main-content");
   const intro = document.getElementById("intro-screen");
