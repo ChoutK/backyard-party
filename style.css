@@ -106,6 +106,14 @@ a {
   opacity: 1;
 }
 
+.footer-text {
+  margin-top: 0.7rem;
+  font-size: 0.7rem;
+  color: #fff;
+  opacity: 0.8;
+  text-shadow: 0 0 5px #f0f, 0 0 10px #0ff;
+}
+
 .purple {
   border-color: #c600ff;
   animation: pulsePurple 1.2s infinite alternate;
