@@ -169,17 +169,21 @@ a {
 .button {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background-color: #000;
+  background-color: rgba(128, 0, 128, 0.3); /* semi-transparent purple */
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #b366ff;
+  backdrop-filter: blur(4px); /* optional: softens background behind button */
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.3s ease;
 }
 
 .button:active {
   transform: scale(0.95);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px #b366ff;
+  background-color: rgba(128, 0, 128, 0.45);
 }
+
 
 .countdown {
   font-weight: bold;
