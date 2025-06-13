@@ -139,6 +139,11 @@ a {
   animation: pulseOrange 1.2s infinite alternate;
 }
 
+.pink {
+  border-color: #ff0095;
+  animation: pulsePink 1.2s infinite alternate;
+}
+
 
 /* Pulse animations */
 @keyframes pulsePurple {
@@ -164,6 +169,11 @@ a {
 @keyframes pulseOrange {
   0%   { box-shadow: 0 0 5px #ff6700; }
   100% { box-shadow: 0 0 20px #ff6700, 0 0 40px #ff6700; }
+}
+
+@keyframes pulsePink {
+  0%   { box-shadow: 0 0 5px #ff0095; }
+  100% { box-shadow: 0 0 20px #ff0095, 0 0 40px #ff0095; }
 }
 
 .button {
